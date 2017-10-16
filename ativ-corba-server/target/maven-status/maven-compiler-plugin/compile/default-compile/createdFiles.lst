@@ -1,8 +1,0 @@
-br/edu/ifpb/pos/ativ/corba/server/idl/HelloApp/HelloOperations.class
-br/edu/ifpb/pos/ativ/corba/server/idl/HelloApp/HelloImpl.class
-br/edu/ifpb/pos/ativ/corba/server/idl/HelloApp/Hello.class
-br/edu/ifpb/pos/ativ/corba/server/idl/HelloApp/HelloHelper.class
-br/edu/ifpb/pos/ativ/corba/server/idl/HelloApp/HelloHolder.class
-br/edu/ifpb/pos/ativ/corba/server/main/Main.class
-br/edu/ifpb/pos/ativ/corba/server/idl/HelloApp/_HelloStub.class
-br/edu/ifpb/pos/ativ/corba/server/idl/HelloApp/HelloPOA.class
