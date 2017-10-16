@@ -12,8 +12,12 @@ O projeto divide-se em três módulos:
 
 Para executar este projeto, siga as seguintes instruções:
 
-- Certifíque-se de ter o Docker e o docker-compose instalado em sua máquina;
-- Com um terminal aberto no diretório root do projeto, execute o seguinte comando:
+- Cerfique-se de que os seguintes programas estão instalados corretamente em sua máquina:
+	- Docker
+	- Docker Compose
+	- Maven
+- Com um terminal aberto no diretório root do projeto, execute os seguintes comandos:
+	- `mvn clean install`
 	- `sudo docker-compose up -d` ou `sh start.sh`
 
 Executado o comando a cima, três imagens serão criadas e um container será instanciado para cada imagem. Após a criação das imagens e a instância dos containers, o cliente realizará uma chamada remota ao método helloworld() que irá retornar uma String contendo a mensagem "Hello World! :)". Essa mensagem será escrita e exibida na saída padrão e então o cliente será finalizado.
