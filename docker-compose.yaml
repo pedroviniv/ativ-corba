@@ -1,0 +1,26 @@
+version: "2"
+services:
+  corba-register:
+    container_name: ativ-corba-register
+    image: ativ-corba-register
+    build: ./ativ-corba-register
+    ports:
+      - "1051:1050"
+    expose:
+      - 1051
+  corba-server:
+    container_name: ativ-corba-server
+    image: ativ-corba-server
+    build: ./ativ-corba-server
+    links:
+      - "corba-register:ativ-corba-register"
+  corba-client:
+    container_name: ativ-corba-client
+    image: ativ-corba-client
+    build: ./ativ-corba-client
+    links:
+      - "corba-register:ativ-corba-register"
+networks:
+  default:
+    external:
+      name: ativ-corba
